@@ -6,11 +6,10 @@
 </head>
 
 <body>
-<h1>📚 Gestão de Biblioteca - Projeto PII</h1>
-
+<h1>📚 Gestão de Biblioteca - Aplicação </h1>
 
 <h2>🎯 Objetivo</h2>
-<p>Desenvolver uma aplicação para gerir livros, leitores e empréstimos, com uma interface gráfica amigável e conexão com base de dados SQL Server. A aplicação segue o padrão arquitetural <span class="highlight">MVVM</span>.</p>
+<p>Aplicação para gestão de livros, leitores e requesições, com uma interface gráfica amigável e conexão com base de dados em SQL Server. Esta aplicação segue o padrão arquitetural <span class="highlight">MVVM</span>.</p>
 
 <h2>🛠️ Tecnologias e Ferramentas</h2>
 <ul>
@@ -24,11 +23,12 @@
 
 <h2>📦 Estrutura do Projeto</h2>
 <pre><code>GestaoBibliotecaApp/
-├── Models/           # Livro, Leitor, Emprestimo, Categoria
-├── ViewModels/       # Lógica das views
+├── Models/           # Livro, Leitor, Emprestimo, Categoria e Filtro
 ├── Views/            # XAML das interfaces
+├── ViewModels/       # Lógica das views
+├── Helper/           # RelayCommand.cs ligar ações da interface a métodos da lógica 
 ├── Data/             # DBHelper.cs com acesso à base de dados
-└── SQL/              # Scripts Tabelas.sql, SPs e DadosExemplo.sql</code></pre>
+└── SQL/              # Scripts das Tabelas e Stored Procedures</code></pre>
 
 <h2>🧩 Padrão MVVM</h2>
 <p>Separação entre:</p>
@@ -68,28 +68,28 @@
 <h2>🗄️ Base de Dados</h2>
 <ul>
     <li>Tabelas relacionais com <code>FOREIGN KEY</code></li>
-    <li><strong>Stored Procedures:</strong> Inserir, Eliminar, Atualizar, Listar</li>
+    <li><strong>Stored Procedures:</strong> Inserir, Eliminar, Atualizar, Listar, etc</li>
     <li>Queries otimizadas com <code>JOIN</code></li>
 </ul>
 
 <h2>🚀 Como Executar Localmente</h2>
 <ol>
-    <li>Clone o repositório: <code>git clone https://github.com/teu-user/GestaoBibliotecaApp.git</code></li>
-    <li>Abra o projeto no Visual Studio</li>
-    <li>No SSMS, execute os scripts: <code>Tabelas.sql</code> &rarr; <code>StoredProcedures.sql</code> &rarr; <code>DadosExemplo.sql</code></li>
-    <li>Configure a connection string no <code>DBHelper.cs</code></li>
-    <li>Execute com <strong>F5</strong></li>
+    <li>Clonar o repositório: <code>git clone https://github.com/dgsvl21/GestaoBibliotecaApp.git</code></li>
+    <li>Abrir o projeto no Visual Studio</li>
+    <li>No SSMS, executar os scripts: <code>Tabelas.sql</code> &rarr; <code>StoredProcedures.sql</code> &rarr;</li>
+    <li>Configurar a connection string no <code>DBHelper.cs</code></li>
+    <li>Correr o código</li>
 </ol>
 
 <h2>🧪 Testes e Validações</h2>
 <ul>
     <li>Verificações com <code>try/catch</code> e <code>MessageBox</code></li>
     <li>Validação de campos obrigatórios</li>
-    <li>Mensagens se não houver histórico</li>
+    <li>Mensagens de aviso se não houver dados a mostrar</li>
 </ul>
 
 <h2>✅ Conclusão</h2>
-<p>Implementa um CRUD completo e segue boas práticas de organização e arquitetura. Está preparada para ser expandida no futuro (penalizações, exportação, relatórios).</p>
+<p>Implementado um CRUD completo com boas práticas de organização e arquitetura. Está preparada para expansões futuras (penalizações, exportação, relatórios).</p>
 
 </body>
 </html>
