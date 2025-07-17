@@ -76,7 +76,7 @@
 <ol>
     <li>Clonar o repositório: <code>git clone https://github.com/dgsvl21/GestaoBibliotecaApp.git</code></li>
     <li>Abrir o projeto no Visual Studio</li>
-    <li>No SSMS, executar os scripts: <code>Tabelas.sql</code> &rarr; <code>StoredProcedures.sql</code> &rarr;</li>
+    <li>No SSMS, executar os scripts: <code>Tabelas.sql</code> &rarr; <code>StoredProcedures.sql</code></li>
     <li>Configurar a connection string no <code>DBHelper.cs</code></li>
     <li>Correr o código</li>
 </ol>
