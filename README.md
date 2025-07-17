@@ -3,40 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Biblioteca - README</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 30px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        code {
-            background: #eee;
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-        pre {
-            background: #eee;
-            padding: 10px;
-            overflow-x: auto;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .highlight {
-            background-color: #d0f0c0;
-            padding: 4px 8px;
-            border-radius: 4px;
-        }
-    </style>
 </head>
+
 <body>
 <h1>📚 Gestão de Biblioteca - Projeto PII</h1>
 
